@@ -1,1 +1,66 @@
+                                             WRITE UPS
+                                            
+chall1.jpeg
+On using exiftool,we find the flag in the comment section,which is a base64 string.Once we decode it,we get the flag:)
+
+FLAG: inctf{Wh4t_4re_y0u 0_0 ing  at}
+
+chall2.wav
+Since it doesn't work with qsstv and Audacity, we'll have to use Sonic Visualiser.In the layer menu,we've something called 
+Add spectrogram,or just press Ctrl+G.And there is our flag!
+
+FLAG: chall2:inctf{did_audacity_work_???}
+
+chall3.zip
+Since it's a zip file,it's obvious that we'll have to use fcrackzip. Tried a dictionary attack using rockyou.txt and yeah,
+we get the password. We find a puppy in flag.png. On extracting the LSB data,we get our flag.
+
+FLAG: inctf{3ach_4nd_3v3ry_s3cre7_inf0rm4t10n_w1ll_b3_kn0wn_by_wir3shark!!!!!_:)}
+
+chall4.png
+This is a bit difficult task for beginners.Got to know about pngchunks in bi0s.wiki. We'll have to correct the 
+MAGIC NUMBERS first.There are some chunks corrupted as well.Correcting them all would give us the flag:)
+
+FLAG: inctf{correcting_all_chunks_gives_the_image}
+
+chall5.pdf
+This is an easy task though.We use pdfcrack and try a dictionary attack with rockyou.txt. And yep, we get the password.
+
+FLAG: inctf{5ddf7d70fcc387ac24660e3fff6129efd0b6e2889cd1339dd1}
+
+chall6.jpg
+Struggled a bit here,but stegnography helped a lot.We can also use online stegnographic tools.
+
+FLAG: inctf{this_is_4n_e4sY_!}
+
+chall7.txt
+This challenge consumed a lot of time. Googled about basic stegnographic tools and learnt about stegsnow. 
+
+FLAG: inctf{snow_snow_snow_stegsnowwwww....}
+
+chall8.png
+This is an easy task.View the image in GNU and adjust the brightness and contrast.And yeah, we get our flag.
+
+FLAG: inctf{e5c29838a74ab34fa7b9d18ca1a8d07d679c8aa3}
+
+chall9.png
+YES, it's zbarimg.An easy one though.
+
+FLAG: flag{B4r_c0de_scanned}
+
+chall10.png
+Struggled a lot until I learnt about zsteg. Extract the data in LSB and we get the flag.
+
+FLAG: inctf{y0u_g0t_th3_fl4g_d1d_y0u_le4rn_any7hing_?}
+
+chall11.jpg
+Open the file on ghex and remove the unwanted additional bytes.
+
+FLAG: inctf{C0rr3ct3d_th3_JPG_f1l3}
+
+Missing Heroes
+On using exiftool, we find out that the GPS locations are actually the ASCII values, which gives us the flag.
+
+FLAG: inctf{d3f4a51}
+
 
