@@ -18,7 +18,7 @@ we get the password. We find a puppy in flag.png. On extracting the LSB data,we 
 FLAG: inctf{3ach_4nd_3v3ry_s3cre7_inf0rm4t10n_w1ll_b3_kn0wn_by_wir3shark!!!!!_:)}
 
 chall4.png
-This is a bit difficult task for beginners.Got to know about pngchunks in bi0s.wiki. We'll have to correct the 
+This is a bit difficult task for beginners.Got to know about pngchunks from bi0s.wiki. We'll have to correct the 
 MAGIC NUMBERS first.There are some chunks corrupted as well.Correcting them all would give us the flag:)
 
 FLAG: inctf{correcting_all_chunks_gives_the_image}
